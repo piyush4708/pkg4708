@@ -1,0 +1,382 @@
+<html>
+<head>
+  <title>BCA Garbagewalla</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="logo.jpg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+  <style>
+  h1{
+                text-align: center;
+                color: #0F3460;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 40px;
+            }
+            .form {
+              outline: 8px ridge rgba(50, 56, 220, 0.6);
+              border-radius: 2rem;
+              
+              max-width: 500px;
+              margin: 10px auto;
+                padding: 10px 20px;
+                background: #f4f7f8;opacity: 0.9;
+              border-radius: 8px;
+              position: relative;
+        }
+
+            /*input[type=file]{
+            width: 50%;
+            padding: 0px;
+            border: 1px solid #ccc;
+
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 30px;
+            }*/
+            input[type=text],
+            input[type=number],
+            input[type=date],
+            input[type=time],
+            input[type=email],
+            textarea,
+            select{
+              border-radius: 2rem;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: auto;
+            outline: 0;
+            padding: 8px;
+            width: 100%;
+            background-color: #e8eeef;
+            color: black;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            margin-bottom: 30px;
+          }
+          input[type=submit]{
+            border-radius: 1em;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: auto;
+            outline: 0;
+            padding: 8px;
+            width: 100%;
+            background-color: #1F4690;
+            color: black;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            margin-bottom: 30px;
+          }
+
+            .lig{
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-left: 30px;
+            }
+            >
+.mapouter{
+  position:relative;
+  text-align:right;width:100%;
+  height:400px;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  width:100%;height:400px;}
+.gmap_iframe {height:400px!important;}
+            
+
+
+
+
+        </style>
+        <script>
+
+        </script>
+</head>
+<body>
+  
+  <header class="site-header">
+  <div class="site-identity">
+    <a href="index.html"><img src="logo.jpg" alt="Site Name" /></a>
+    <h1>
+      <a href="index.html">BCA Garbagewalla</a>
+    </h1>
+  </div>
+  <nav>
+			<a href="index.html">Home</a>
+			<a href="#" class="selected">Services</a>
+
+			<a href="about.html">About</a>
+      <a href="login.html">Login</a>
+			<a href="#">Contact</a>
+	</nav>
+</header>
+<h1 style="padding: 10px;">Welcome</h1>
+<div class="wrapper">
+  <div class='header'>
+
+  </div>
+  <ul id="slider">
+        <li class="slide"><img src="img01.jpg" width="100%" height="400px" style="border-radius: 1em;"></li>
+        <li class="slide"><img src="img02.jpg" width="100%" height="400px" style="border-radius: 1em;"></li>
+        <li class="slide"><img src="img03.jpg" width="100%" height="400px" style="border-radius: 1em;"></li>
+       <!-- <li class="slide"><img src="" width="600px" height="400px"></li>
+        <li class="slide"><img src="" width="600px" height="400px"></li>-->
+    </ul>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#slider>li:gt(0)').hide();
+   setInterval(function() {
+      $('#slider > li:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slider');
+    }, 2000);
+
+ });
+</script>
+
+<!--<div class="slides slowFade">
+        <div class="slide">
+            <img src="sl01 (1).jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="sl02.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="sl03.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="sl04.jpg" alt="img"/>
+        </div>-->
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:flex;" >
+
+
+<div class="whatwedo" style="width:50%; background: #f4f7f8;opacity: 01;border-radius: 2em;" >
+
+
+  <h2 style="color: #0F3460;text-decoration: underline; text-align: center;font-size: 3.5rem;">What We Do</h2>
+  <div style=" color: rgb(0, 0, 0); font-size: 1.25rem;">
+<p>
+  As we know, importance of waste management has always been a great concern nowadays.
+  The world is sinking into the sea of waste.
+  Every narrow nooks and corner of the streets are being piled up with waste.
+  Waste management reduces the effect of waste on the environment, health, and so on.
+  It can also help reuse or recycle resources, such as; <b> Paper, Cans, Glass, and so on</b>.
+  There is various type of waste management that include the disposal of solid, liquid, gaseous, or hazardous substances.
+  The ‘Waste Management System’ is a web application aimed to provide a digital way of complaining the concerns of general citizens to their relative municipalities.
+</p>
+<p>
+  1.Complaining about waste or garbage problems near their locality.
+</p>
+<p>
+  2.Book an garbage truck that will pick your garbage from doorsteps
+</p>
+<P>
+  3.See thier complain Report and check if the work is done! or not.
+</P>
+<P>
+  4.people can take different ideas regarding recycling of waste through this website.
+</P>
+Complaining about the waste problem encountered everyday to municipality is hefty process and waste management aims
+to make this process easier. With a simple handheld device with access to internet, user can use this platform complain
+their concerns to municipality . The automated system will redirect the complains .The municipality admins to make perfect utilise
+of you Garbage and at the receiving side can acknowledge the reports which lets the users whether their complain is adddressed or not.
+</p></div>
+<div>
+<h2 style="color: #2438a4;font-size: 3.5em;text-decoration: underline;">Our Mission</h2>
+  
+<div style="font-size: 1.25em;color: black;"><p>We are running out of land to put our garbage. It is predicted that by 2050, we will need two Earths to sustain our current 
+    waste output. However, there is a solution. we can book a garbage truck that will pick up our trash from our doorsteps.
+   This would reduce the amount of waste that is produced because it would be collected before it has a chance to accumulate.
+   In addition, it would also reduce the amount of pollution that is produced from incinerating or landfill waste.
+  </p>
+  <p>
+    garbage truck operators play an important role in society. They help to keep our streets clean and prevent the spread of disease. 
+    They also help to reduce environmental pollution by picking up and disposing of our garbage in a responsible manner.
+  </p>
+  <p>
+    Booking a garbage truck that will pick up your trash from your doorstep is a great way to help our future.
+     This service helps to keep our environment clean and helps to reduce the amount of waste that goes into landfills. 
+    This is a great way to do your part in helping to save our planet.
+  </p>
+  <p>
+    Booking a garbage truck that will pick your garbage from doorsteps is a great way to help our future. 
+    This service helps to keep our streets and sidewalks clean, and it also helps to reduce the amount of
+     pollution that comes from garbage trucks.
+  </p>
+  <p>
+    Vehicle pollution is one of the leading causes of global warming, and it is important to do our part 
+    to reduce our emissions. By booking a garbage truck that will pick up our garbage from our doorsteps, 
+    we can help to reduce the number of vehicles on the road and decrease our carbon footprint.
+  </p>
+  <p>
+    The garbage truck is a new initiative that helps our future by reducing the amount of waste we produce. 
+    It picks up garbage from doorsteps and takes it to a recycling center where it is sorted and recycled. 
+    This reduces the amount of waste that goes to landfill sites, which helps to reduce pollution and protect our environment.
+  </p>
+  <p>
+    Booking a garbage truck helps our future in many ways. For one, it helps keep our environment clean. It also helps reduce 
+    traffic on the roads and makes it easier for people to get around. Moreover, it helps keep our homes and neighborhoods clean
+     and tidy.
+  </p>
+  <p>
+
+  </p>
+</div>
+</div>
+</div>
+
+<div class="form" style="width:50%">
+  <h1 >Booking Details</h1>
+  <form>
+  <div >
+      <label for ="Date">Date*</label><br>
+      <input type="date" id="date"   name="date" placeholder="Date" required><br>
+      <label for="time" >Time*</label><br />
+      <input type="time" name="time" placeholder="Time" required><br />
+      <label for="fname">Name*:</label><br>
+      <input type="text" id="fanme" name="first name" placeholder="your name..." required><br>
+      <label for ="moblie number">Moblie number*:</label><br>
+      <input type="number" id=mnumber  name="moblie number"   placeholder="enter the number" required><br>
+
+      <label for="OTP">OTP CODE</label><br>
+      <input type="text" id="otp" name="father name" placeholder="OTP" required><br>
+      <label for ="lname">Email id:</label><br>
+      <input type="email" id="email" name="email id" placeholder="enter the email" required><br>
+      <label for ="address">Address*:</label><br>
+       <input type="text" id="adress"   name="pernament adress" placeholder="pernament adress" required><br>
+       <label for ="moblie number">Pincode*:</label><br>
+       <input type="number" id=pnumber  name="pincode"   placeholder="Enter the pincode" required><br>
+       <input type="submit" value="Submit" >
+       <a href="login.html"></a><input type="submit" value="Login"></a>
+       <a href="signup.html"></a><input type="signup" value="Signup"></a>       <!--<label for ="gender">Gender:</label><br>
+      <input class="lig" list="gender" ><br>
+      <datalist id="gender">
+         <option value="MALE">
+         <option value="FEMALE">
+
+      </datalist>
+
+
+      <label for ="address">local address:</label><br>
+      <input type="text" id="ladress"   name="local adress" placeholder="local adress"><br>-->
+      
+
+
+
+
+
+
+   </div>
+  </form>
+  <h1 style="color:rgb(62, 60, 194);">
+Refresh Infratech</h1>
+<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+   src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Refresh infratech Pvt.Ltd&amp;t=&amp;z=20&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+  </iframe><a href="https://mcpenation.com/">Minecraft Website</a>
+</div>
+<style>
+.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+  <div class="footer">
+    <div class="inner-footer">
+
+
+      <div class="footer-items">
+        <h1>BCA Garbagewalla</h1>
+        <p>discription to be added</p>
+      </div>
+
+
+      <div class="footer-items">
+        <h3>Quick Links</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="#"><li>Search</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="about.html"><li>About</li></a>
+          </ul>
+      </div>
+
+
+      <div class="footer-items">
+        <h3>Services</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="book.html"><li>Book your slot</li></a>
+            <a href="login.html"><li>Log in to your acount</li></a>
+            <a href="signup.html"><li>sign up</li></a>
+            <a href="#"><li>#</li></a>
+          </ul>
+      </div>
+
+
+      <div class="footer-items">
+        <h3>Contact us</h3>
+        <div class="border1"></div>
+          <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
+            <li><a href = "mailto: abc@example.com"><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</a></li>
+          </ul>
+         
+
+
+          <div class="social-media">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+          </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy;2022
+    </div>
+  </div>
+</body>
+</html>

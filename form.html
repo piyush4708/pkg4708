@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        body{
+          background-color:#E8F9FD;
+        }
+
+            h1{
+                text-align: center;
+                color: #0F3460;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 40px;
+            }
+            .form {
+              max-width: 300px;
+              margin: 10px auto;
+                padding: 10px 20px;
+              background: #f4f7f8;
+          border-radius: 8px;
+        }
+
+            /*input[type=file]{
+            width: 50%;
+            padding: 0px;
+            border: 1px solid #ccc;
+
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 30px;
+            }*/
+            input[type=text],
+            input[type=number],
+            input[type=date],
+            input[type=time],
+            input[type=email],
+            textarea,
+            select{
+            background: rgba(255,255,255,0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: auto;
+            outline: 0;
+            padding: 8px;
+            width: 100%;
+            background-color: #e8eeef;
+            color: black;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            margin-bottom: 30px;
+          }
+          input[type=submit]{
+            background: rgba(255,255,255,0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: auto;
+            outline: 0;
+            padding: 8px;
+            width: 100%;
+            background-color: #1F4690;
+            color: black;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            margin-bottom: 30px;
+          }
+
+            
+
+
+
+        </style>
+
+
+    </head>
+    <body >
+            <h1>Booking Details</h1>
+            <form>
+            <div class ="form">
+                <label for ="Date">Date*</label><br>
+                <input type="date" id="date"   name="date" placeholder="Date" required><br>
+                <label for="time" >Time*</label><br />
+                <input type="time" name="time" placeholder="Time" required><br />
+                <label for="fname">Name*:</label><br>
+                <input type="text" id="fanme" name="first name" placeholder="your name..." required><br>
+                <label for ="moblie number">Moblie number*:</label><br>
+                <input type="number" id=mnumber  name="moblie number"   placeholder="enter the number" required><br>
+
+                <label for="OTP">OTP CODE</label><br>
+                <input type="text" id="otp" name="father name" placeholder="OTP" required><br>
+                <label for ="lname">Email id:</label><br>
+                <input type="email" id="email" name="email id" placeholder="enter the email" required><br>
+                <label for ="address">Address*:</label><br>
+                 <input type="text" id="adress"   name="pernament adress" placeholder="pernament adress" required><br>
+                 <label for ="moblie number">Pincode*:</label><br>
+                 <input type="number" id=pnumber  name="pincode"   placeholder="Enter the pincode" required><br>
+                 <input type="submit" value="Submit" required>
+                 <!--<label for ="gender">Gender:</label><br>
+                <input class="lig" list="gender" ><br>
+                <datalist id="gender">
+                   <option value="MALE">
+                   <option value="FEMALE">
+
+                </datalist>
+
+
+                <label for ="address">local address:</label><br>
+                <input type="text" id="ladress"   name="local adress" placeholder="local adress"><br>-->
+
+
+
+
+
+
+             </div>
+            </form>
+    </body>
+</html>
